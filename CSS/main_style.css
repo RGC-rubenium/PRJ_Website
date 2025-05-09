@@ -4,12 +4,12 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
-    background-color: rgb(22, 22, 31);
+    background-color: rgb(31, 31, 44);
 }
 .main_container{
     display: flex;
 }
-
+/* Sidebar */
 .sidebar{
     margin: 15;
     padding: 0;
@@ -59,7 +59,7 @@ body{
     cursor: pointer;
     background-color: rgb(30, 30, 41);
 }
-
+/* Main COntent */
 .content{
     flex: 1;
 }
@@ -100,4 +100,23 @@ body{
 .card p {
     font-size: 24px;
     margin: 0;
+}
+
+#chart_cards{
+    color: white;
+    display: flex;
+}
+.charts{
+    background-color: #2d2d44;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px 16px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.charts canvas {
+    max-width: 100%;
+    height: 250px;
 }
