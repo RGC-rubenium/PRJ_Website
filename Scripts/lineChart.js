@@ -12,6 +12,7 @@ const lineCtx = document.getElementById('lineChart').getContext('2d');
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         title: {
           display: true,
@@ -21,6 +22,9 @@ const lineCtx = document.getElementById('lineChart').getContext('2d');
       scales: {
         y: {
           beginAtZero: true
+        },
+        x:{
+          beginAtZeroq: true
         }
       }
     }

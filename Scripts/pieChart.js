@@ -8,11 +8,11 @@ const pieCtx = document.getElementById('pieChart').getContext('2d');
         data: [300, 50, 100, 150],
         backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FF33A6'],
         borderColor: 'white',
-        fill: true
       }]
     },
     options: {
-      responsive: false,
+      responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         title: {
           display: true,
@@ -21,6 +21,9 @@ const pieCtx = document.getElementById('pieChart').getContext('2d');
       },scales: {
         y: {
           beginAtZero: true
+        },
+        x:{
+          beginAtZeroq: true
         }
       }
     }
