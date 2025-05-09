@@ -18,13 +18,6 @@ const pieCtx = document.getElementById('pieChart').getContext('2d');
           display: true,
           text: 'Top Selling Categories'
         }
-      },scales: {
-        y: {
-          beginAtZero: true
-        },
-        x:{
-          beginAtZeroq: true
-        }
       }
     }
   });

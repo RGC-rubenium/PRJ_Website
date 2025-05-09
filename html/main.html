@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/main_style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../style/userint.css">
+    <link rel="stylesheet" href="../style/main_content.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -17,19 +17,19 @@
             <nav>
                 <ul>
                     <li>
-                        <button class="button_nav" onclick="window.location.href='main.html'">Dashboard</button>
+                        <button class="button_nav" id="current_page" onclick="window.location.href='main.html'">Dashboard</button>
                     </li>
                     <li>
                         <button class="button_nav" onclick="window.location.href='usermanagement.html'">User Management</button>
                     </li>
                     <li>
-                        <button class="button_nav">Button1</button>
+                        <button class="button_nav">Sales Reports</button>
                     </li>
                     <li>
-                        <button class="button_nav">Button1</button>
+                        <button class="button_nav">Settings</button>
                     </li>
                     <li>
-                        <button class="button_nav">Button1</button>
+                        <button class="button_nav">Logout</button>
                     </li>
                 </ul>
             </nav>
@@ -74,10 +74,18 @@
             <section id="product">
                 <div class="product-table">
                     <h3>Products</h3>
+                    <button>Add New Product</button>
                     <Table>
                         <thead>
-
+                            <th>Product ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Status</th>
                         </thead>
+                        <tbody>
+                        </tbody>
                     </Table>
                 </div>
 
