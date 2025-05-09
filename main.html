@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li>
-                        <button class="button_nav">Dashboard</button>
+                        <button class="button_nav" id="page_title">Dashboard</button>
                     </li>
                     <li>
                         <button class="button_nav">User Management</button>
@@ -53,8 +53,15 @@
                 </div>
             </section>
 
-            <section>
-                
+            <section id="chart_cards">
+                <div class="charts">
+                    <h3>Sales Over Time</h3>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="charts">
+                    <h3>Top Selling Categories</h3>
+                    <canvas id="pieChart"></canvas>
+                </div>
             </section>
         </main>
     </div>
