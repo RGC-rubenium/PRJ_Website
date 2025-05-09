@@ -17,6 +17,7 @@ body{
     width: 250px;
     border-radius: 10px;
     height: 100vh;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar .sidebar_header{
@@ -51,7 +52,6 @@ body{
     text-align: left;
     font-size: 18;
     width: 100%;
-    border-radius: 6px;
     box-sizing: border-box;
 }
 
@@ -105,12 +105,14 @@ body{
 #chart_cards{
     color: white;
     display: flex;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 .charts{
     background-color: #2d2d44;
     padding: 20px;
     flex: 1;
-    margin: 0 10px 16px;
+    margin: 0 10px;
     text-align: center;
     border-radius: 8px;
     box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
@@ -119,4 +121,15 @@ body{
 .charts canvas {
     max-width: 100%;
     height: 250px;
+}
+#product{
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#product .product-table{
+    background-color: #2d2d44;
+    margin: 0 10px;
+    border-radius: 8px;
 }
