@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/userint.css">
-    <link rel="stylesheet" href="../style/main_content.css">
-    <link rel="stylesheet" href="../style/AddProduct_form.css">
+    <link rel="stylesheet" href="style/userint.css">
+    <link rel="stylesheet" href="style/main_content.css">
+    <link rel="stylesheet" href="style/AddProduct_form.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <div class="main_container">
@@ -22,7 +22,7 @@
                         <button class="button_nav" id="current_page" onclick="window.location.href='main.html'">Dashboard</button>
                     </li>
                     <li>
-                        <button class="button_nav" onclick="window.location.href='usermanagement.html'">User Management</button>
+                        <button class="button_nav" onclick="window.location.href='html/usermanagement.html'">User Management</button>
                     </li>
                     <li>
                         <button class="button_nav">Sales Reports</button>
@@ -63,13 +63,13 @@
                     <h3>Sales Over Time</h3>
           
                     <canvas id="lineChart"></canvas>
-                    <script src="../Scripts/lineChart.js"></script>
+                    <script src="Scripts/lineChart.js"></script>
                 
                 </div>
                 <div class="charts">
                     <h3>Top Selling Categories</h3>
                     <canvas id="pieChart"></canvas>
-                    <script src="../Scripts/pieChart.js"></script> 
+                    <script src="Scripts/pieChart.js"></script> 
                 </div>
             </section>
 
@@ -101,7 +101,18 @@
                 <h2>Add Product</h2>
             </section>
             <section id="addform_input">
-                <input id="product_ID" type="text" placeholder="Enter Product ID">
+                <div>
+                    <p>Product ID: </p>
+                    <input class="inputText" type="text" placeholder="Enter Product ID">
+                </div>
+                <div>
+                    <p>Product_Name: </p>
+                    <input class="inputText" type="text" placeholder="Enter Product Name">
+                </div>
+                <div>
+                    <p>Product_Category: </p>
+                    <input class="inputSelector" type="sele" placeholder="Enter Product Categories">
+                </div>
             </section>
             <section id="addform_buttons">
                 <button onclick="closeForm()">Close</button>
