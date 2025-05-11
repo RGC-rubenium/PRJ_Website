@@ -5,6 +5,7 @@ body{
     font-family: Arial, sans-serif;
     height: 100vh;
     background-color: rgb(31, 31, 44);
+    display: block;
 }
 .main_container{
     display: flex;
