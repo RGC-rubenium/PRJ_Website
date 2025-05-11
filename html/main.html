@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style/main_content.css">
     <link rel="stylesheet" href="../style/AddProduct_form.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/main.js"></script>
 </head>
 <body>
     <div class="main_container">
@@ -75,7 +76,7 @@
             <section id="product">
                 <div class="product-table">
                     <h3>Products</h3>
-                    <button>Add New Product</button>
+                    <button onclick="openForm()">Add New Product</button>
                     <Table>
                         <thead>
                             <th>Product ID</th>
@@ -93,9 +94,18 @@
             </section>
         </main>
     </div>
-    <div class="modal">
+
+    <div class="modal" id="AddProduct_Form">
         <div class="modal_content">
-            
+            <section id="addform_title">
+                <h2>Add Product</h2>
+            </section>
+            <section id="addform_input">
+                <input id="product_ID" type="text" placeholder="Enter Product ID">
+            </section>
+            <section id="addform_buttons">
+                <button onclick="closeForm()">Close</button>
+            </section>
         </div>
     </div>
 </body>
