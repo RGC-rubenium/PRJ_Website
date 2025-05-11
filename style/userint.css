@@ -26,7 +26,6 @@ body{
     margin-bottom: 10px;
     text-align: center;
     color: white;
-    font-size: 20;
 }
 
 .sidebar nav ul {
@@ -64,7 +63,6 @@ body{
 .sidebar nav ul li button:hover{
     cursor: pointer;
     background-color: rgb(21, 21, 54);
-    transition: color 1 ease-in-out;
 }
 
 @media (max-width: 681px){

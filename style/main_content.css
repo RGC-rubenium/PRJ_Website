@@ -59,7 +59,6 @@
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgb(183, 19, 233);
-    min-height: none;
 }
 
 .charts canvas {
@@ -98,8 +97,7 @@
     background-color: #2d2d44;
     margin: 0 10px;
     flex: 1 1 100%;
-    border-radius: 8px;;
-    min-height: none;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgb(183, 19, 233)
 }
 .product-table table{
