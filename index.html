@@ -13,10 +13,11 @@
 </head>
 <body>
     <div class="nav_container">
-        <nav class="mobile_nav">
-            <button>
-                
-            </button>
+        <nav class="mobile_nav" id="mob_nav">
+            <button onclick="openMenu()"> Menu </button>
+        </nav>
+        <nav class="menu" id="page_menu">
+            <button onclick="closeMenu()">Close</button>
         </nav>
     </div>
     <div class="main_container">
@@ -46,11 +47,11 @@
         </aside>
 
         <main class="content">
-            <section id="content_title">
+            <section id="content_title" class="sect_container">
                 <h1>Dashboard</h1>
             </section>
 
-            <section id="top_cards">
+            <section id="top_cards" class="sect_container">
                 <div class="card">
                     <h3>Daily Sales</h3>
                     <p></p>
@@ -66,7 +67,7 @@
                 </div>
             </section>
 
-            <section id="chart_cards">
+            <section id="chart_cards" class="sect_container">
                 <div class="charts">
                     <h3>Sales Over Time</h3>
           
@@ -81,7 +82,7 @@
                 </div>
             </section>
 
-            <section id="product">
+            <section id="product" class="sect_container">
                 <div class="product-table">
                     <h3>Products</h3>
                     <button onclick="openForm()">Add New Product</button>

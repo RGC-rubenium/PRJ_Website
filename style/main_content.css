@@ -126,3 +126,13 @@
         opacity: 1;
     }
 }
+
+@media (max-width:681px) {
+    .sect_container{
+        margin-left: 10px;
+    }
+    
+    #content_title{
+        padding: 0 20px;
+    }
+}

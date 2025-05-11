@@ -5,7 +5,7 @@ body{
     font-family: Arial, sans-serif;
     height: 100vh;
     background-color: rgb(31, 31, 44);
-    display: block;
+    height: auto;
 }
 .main_container{
     display: flex;
@@ -67,8 +67,11 @@ body{
     transition: color 1 ease-in-out;
 }
 
-@media (max-width: 500px){
+@media (max-width: 681px){
     .sidebar{
         display: none;
+
     }
+    
 }
+

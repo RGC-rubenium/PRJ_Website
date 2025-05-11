@@ -1,6 +1,52 @@
+
+.nav_container{
+    position: sticky;
+    z-index: 900;
+    top: 0;
+}
 .mobile_nav{
-    background-color: rgb(20, 20, 44);
-    display: flex;
+    background-color: rgb(18, 18, 32);
+    display: none;
+    border-radius: 8px;
+    justify-content: end;
+    box-shadow: 0 2px 4px rgb(109, 10, 139);
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.mobile_nav button
+.mobile_nav button{
+    color: white;
+    background-color: rgb(56, 56, 129);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 60px; 
+    margin: 10px 25px 10px 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+.menu{
+    display: none;
+    background-color: rgb(18, 18, 32);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+}
+
+
+
+
+
+@media (max-width: 681px){
+    
+    .mobile_nav{
+        display: flex;
+    }
+    
+}
+
+@keyframes fadeIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
