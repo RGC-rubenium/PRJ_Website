@@ -16,8 +16,8 @@ body{
     background-color: rgb(41, 41, 59);
     min-width: 250px;
     border-radius: 10px;
-    height: 100vh;
-    box-shadow:  0 2px 4px rgb(0, 0, 0);
+    height: 95vh;
+    box-shadow: 0 2px 4px rgb(183, 19, 233);
 }
 
 .sidebar .sidebar_header{
@@ -64,4 +64,10 @@ body{
     cursor: pointer;
     background-color: rgb(21, 21, 54);
     transition: color 1 ease-in-out;
+}
+
+@media (max-width: 500px){
+    .sidebar{
+        display: none;
+    }
 }
