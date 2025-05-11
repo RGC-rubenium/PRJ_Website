@@ -17,7 +17,7 @@ body{
     min-width: 250px;
     border-radius: 10px;
     height: 100vh;
-    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:  0 2px 4px rgb(0, 0, 0);
 }
 
 .sidebar .sidebar_header{
@@ -54,6 +54,7 @@ body{
     font-size: 18px;
     width: 100%;
     box-sizing: border-box;
+
 }
 #current_page{
     background-color: rgb(31, 31, 44);
@@ -62,4 +63,5 @@ body{
 .sidebar nav ul li button:hover{
     cursor: pointer;
     background-color: rgb(21, 21, 54);
+    transition: color 1 ease-in-out;
 }
